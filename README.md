@@ -4,4 +4,14 @@
 
 ## Installation
 Download the the project and extract the "oneplant-theme" inside "wp-content/themes/".
-The theme includes the Header, Footer and Page template.
+
+## Requirements
+- WordPress 5.9 or above
+- WooCommerce Plugin installed
+
+## Includes
+- Photos from unsplash
+- Demo logo
+- Header Part
+- Footer Part
+- Page Template
