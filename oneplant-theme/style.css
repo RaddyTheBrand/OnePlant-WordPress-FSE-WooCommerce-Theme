@@ -1,0 +1,75 @@
+/*
+Theme Name: OnePlant
+Theme URI: https://raddy.dev/OnePlant
+Author: Raddy
+Author URI: https://raddy.dev/
+Description: OnePlant is a minimalist WordPress theme that lets you edit your site with ease. It's perfect for bloggers, freelancers, and small businesses. With Paperless, you can create a beautiful website without any coding knowledge.
+Requires at least: 5.9
+Tested up to: 6.1
+Requires PHP: 5.6
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: primal
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments
+
+OnePlant WordPress Theme, (C) 2021 WordPress.org
+OnePlant is distributed under the terms of the GNU GPL.
+*/
+
+/*------ Search Input ------*/
+.wp-block-search__input {
+    height: 40px;
+    padding-left: 20px;
+}
+
+
+/*------ Custom Header Styles ------*/
+.custom-header {
+    display: grid!important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "logo cart"
+    "search search";
+    gap: 1rem!important;
+}
+
+.custom-header__logo {
+    grid-area: logo;
+}
+
+.custom-header__search {
+    grid-area: search;
+}
+
+.custom-header__cart {
+    grid-area: cart;
+    display: flex;
+    justify-content: right;
+}
+
+@media only screen and (min-width:600px) {
+    .custom-header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo search cart";
+        gap: 1rem!important;
+    }
+}
+
+/*------ Main Menu Selected Item ------*/
+.main-nav .current-menu-item a {
+    font-weight: 800;
+}
+
+
+/*------ WooCommerce Mods ------*/
+.rounded-corners {
+    overflow: hidden;
+    border-radius: var(--wp--custom--rounded-corners);
+}
+
+.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    overflow: hidden;
+    border-radius: var(--wp--custom--rounded-corners);
+}
